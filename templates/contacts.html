@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
+    <title>Блог</title>
     <!-- Подключение Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
@@ -27,33 +27,48 @@
             </div>
         </nav>
     </header>
-     <div class="container mt-4">
+    <main class="container mt-4">
+        <h1>Добро пожаловать в блог!</h1>
+        <p>Здесь вы можете найти последние новости и статьи.</p>
+
+        <!-- Шаблонный экран для блога -->
         <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="contact-info">
-                    <h1>Контактные данные</h1>
-                    <p><strong>Адрес:</strong> ул. Примерная, 123, офис 456, Москва, Россия, 101000</p>
-                    <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
-                    <p><strong>Электронная почта:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
-                    <p><strong>Веб-сайт:</strong> <a href="http://www.example.com" target="_blank">www.example.com</a></p>
-                    <p><strong>Часы работы:</strong></p>
-                    <p>Пн-Пт: 09:00 - 18:00</p>
-                    <p>Сб-Вс: выходной</p>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="../static/images/green_light.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Исследование показало, что вода может испаряться без нагрева под действием света</h5>
+                        <p class="card-text">Согласно исследованию учёных из Массачусетского технологического института (MIT), свет сам по себе способен испарять воду, причём даже эффективнее, чем тепло.
+Степень испарения зависит от длины волны света и достигает максимума для зелёного света. Это доказывает, что испарение не связано с теплом.
+Явление, по-видимому, влияет на формирование и эволюцию тумана и облаков. Его нужно учитывать в климатических моделях и использовать в установках для опреснения воды.
+                         <a href="https://habr.com/ru/news/771552/" class="btn btn-primary">Читать далее</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="contact-info">
-                    <h1>Другие контакты</h1>
-                    <p><strong>Факс:</strong> +7 (495) 765-43-21</p>
-                    <p><strong>Социальные сети:</strong></p>
-                    <p>
-                        <a href="https://facebook.com/example" target="_blank">Facebook</a><br>
-                        <a href="https://twitter.com/example" target="_blank">Twitter</a><br>
-                        <a href="https://instagram.com/example" target="_blank">Instagram</a>
-                    </p>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="../static/images/kino.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Названы 10 лучших британских фильмов всех времён: нет ни одного из 21 века</h5>
+                        <p class="card-text">Основанный в 1933 году Британский институт кино (BFI) — это некоммерческая организация, призванная популяризировать кино. Институт кино публикует различные монографии о великих фильмах прежних лет, а также спонсирует кинопроекты начинающих режиссеров.
+
+Институт опросил 1 000 экспертов, чтобы составить список величайших британских кинокартин всех времен. Неудивительно, что в список попали фильмы, которые также высоко ценятся зрителями. Как же выглядит рейтинг? Всего было отобрано 100 фильмов, но мы сократили список до 10 лучших. Удивительно, что все они вышли в прошлом столетии.</p>
+                        <a href="https://www.kinoafisha.info/news/nazvany-10-luchshih-britanskih-filmov-vseh-vremen-net-ni-odnogo-iz-21-veka/" class="btn btn-primary">Читать далее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="../static/images/legasy.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Что такое легаси в коде</h5>
+                        <p class="card-text">Иногда программисты на вопрос, почему программа работает именно так, отвечают, что это
+                            «легаси» и исправить ничего нельзя. Разберёмся, что это значит, насколько это мешает разработке и что делают с легаси-кодом.</p>
+                        <a href="https://thecode.media/legacy/" class="btn btn-primary">Читать далее</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>
